@@ -10,63 +10,107 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .green_btn{
-            background-color: #25dac5;
-            color: #ffffff;
-            border: none;
-            border-radius: 999px;
-            padding: 10px 20px;
-        }
-        .normal_btn{
-            background-color: transparent;
-            color: #15143966;
-            border: none;
-            margin-right: 1.5rem;
-            font-weight: 600;
-        }
-        .navbar-brand{
-            color: #1e0e62;
-            font-size: 25px;
-            font-weight: 500;
-        }
+      .green_btn {
+        background-color: #25dac5;
+        color: #ffffff;
+        border: none;
+        border-radius: 999px;
+        padding: 10px 20px;
+      }
+      .normal_btn {
+        background-color: transparent;
+        color: #15143966;
+        border: none;
+        margin-right: 1.5rem;
+        font-weight: 600;
+      }
+      .navbar-brand {
+        color: #1e0e62;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      .hero_section{
+        color: #1e0e62;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+      .hero_talk{
+        color: #1e0e6266;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 80%;
+        margin: auto;
+      }
+
     </style>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container p-3">
-              <a class="navbar-brand" href="#">Start up 3</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container p-3">
+          <a class="navbar-brand" href="#">Start up 3</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 fs-4" href="#"
+                  ><i class="bx bx-search"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button class="normal_btn">Sign In</button>
+              <button class="green_btn btn btn-outline-success" type="button">
+                Sign In
               </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link p-2 fs-4" href="#"><i class='bx bx-search'></i></a>
-                  </li>
-                </ul>
-                <div class="d-flex">
-                    <button class="normal_btn">Sign In</button>
-                  <button class=" green_btn btn btn-outline-success" type="button">Sign In</button>
-                </div>
-              </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
+    <section class="container text-center">
+      <div class="w-50 m-auto mb-5 mt-5">
+        <h1 class="hero_section">Startup Framework</h1>
+        <p class="hero_talk">
+          We made it so beutiful and simple. It combines <br>landings, pages, blogs
+          and shop screens. It is definitely <br> the tool you need in your
+          collection!
+        </p>
+      </div>
+      <div class="d-flex flex-column w-25 m-auto">
+        <button class="green_btn">Purchase Now for $248</button>
+        <button class="normal_btn mt-3" style="color: #25dac5;">Learn More</button>
+      </div>
+    </section>
     <!--Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
