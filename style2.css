@@ -1,25 +1,61 @@
-.txt_1{
-    color: #1E0E62;
-    font-size: 24px;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
 }
 
-.txt_2{
-    color: #1514397b;
-    font-size: 18px;
+.txt_1 {
+  color: #1e0e62;
+  font-size: 24px;
 }
 
-.primary_btn{
-    background-color: #25DAC5;
-    color: #fff;
-    border: none;
-    border-radius: 999px;
-    padding: 5px 21px;
-    font-size: 18px;
+.txt_2 {
+  color: #1514397b;
+  font-size: 18px;
 }
 
-.sec_btn{
-    color: #1514397b;
-    font-size: 18px;
-
+.primary_btn,
+.primary_btn2 {
+  background-color: #25dac5;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 21px;
+  font-size: 18px;
 }
 
+.sec_btn {
+  color: #1514397b;
+  font-size: 18px;
+  border-radius: 999px;
+  padding: 7px 21px;
+  font-size: 18px;
+}
+
+.l_h1 {
+  color: #1e0e62;
+  font-size: 72px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.l_p {
+  color: #15143966;
+  line-height: 32px;
+  width: 582px;
+  line-height: 32px;
+  font-size: 22px;
+}
+
+.primary_btn2 {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.sec_btn2 {
+  color: #25dac5;
+  font-size: 18px;
+  border-radius: 999px;
+  font-family: "Poppins", serif;
+
+}
