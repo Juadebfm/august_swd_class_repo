@@ -3,10 +3,13 @@
 body {
     font-family: "DM Sans", sans-serif;
     scroll-behavior: smooth;
-    background-color: #2F1893;
+    background-color: #2F1893 !important;
   }
   
   button.nav-link {
-    background-color: #482BE7;
+    background-color: #482BE7 !important;
   }
   
+  .custom-btn {
+    background-color: #25DAC5 !important;
+  }

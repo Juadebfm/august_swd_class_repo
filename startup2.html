@@ -18,11 +18,56 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./startup2.css" />
+    <style>
+      @media (max-width: 700px) {
+        section > div.hero {
+          width: 90% !important;
+        }
+        section h1 {
+          font-size: 40px !important;
+        }
+        section p{
+          font-size: 16px !important;
+          margin-top: 3rem;
+        }
+        form > div:first-child {
+          width: 80% !important;
+        }
+        .rukky {
+          width: 100% !important;
+        }
+        .custom-btn {
+          height: 40px;
+        }
+      }
+      @media (min-width:701px) and (max-width:1000px) {
+        section > div.hero {
+          width: 80% !important;
+        }
+        section h1{
+          margin-top: 4rem !important;
+        }
+        section p {
+          font-size: 28px !important;
+          margin-top: 3rem !important;
+        }
+        form > div:first-child {
+          width: 80% !important;
+        }
+        .rukky {
+          width: 80% !important;
+          height: 50px !important;
+        }
+        .custom-btn {
+          width: 40% !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light text-white">
         <div class="container pt-2">
           <a class="navbar-brand text-white fs-3 fw-bold" href="#">Startup 3</a>
           <button
@@ -36,10 +81,16 @@
           >
             <span class="navbar-toggler-icon fs-2"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarText"
+          >
             <ul class="navbar-nav gap-4 fs-6">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
                   >Subscribe</a
                 >
               </li>
@@ -47,12 +98,49 @@
                 <a class="nav-link active text-white" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <button class="nav-link active text-white border-0 rounded-pill px-3">Sign Up</button>
+                <button
+                  class="nav-link active text-white border-0 rounded-pill px-3"
+                >
+                  Sign Up
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- Hero Section -->
+      <section>
+        <div class="hero text-white m-auto text-center w-50 mt-5">
+          <h1 class="fw-bold w-100 m-auto" style="font-size: 66px;">
+            Let’s make design fast and easy
+          </h1>
+          <p class="ruktext w-100 m-auto mt-3" style="font-size: 22px">
+            The most important part of the Startup is the samples. The samples
+            form a set of 25 usable pages you can use as is or you can add new
+            blocks from UI Kit.
+          </p>
+        </div>
+        <!-- Form -->
+        <form>
+          <div class="m-auto align-items-center mt-5">
+            <div class="rukky mx-auto d-flex flex-column flex-sm-row gap-3 w-25">
+              <label for="email" class="visually-hidden">email</label>
+              <input
+                type="email"
+                class="form-control bg-transparent w-100 rounded-pill"
+                id="email"
+                placeholder="Your email"
+                style=" border: 2px solid #ffffff2b;"
+              />
+              <button class=" custom-btn rukky border-0 rounded-pill text-white px-4">Send</button>
+            </div>
+            <small
+              class="text-muted d-flex justify-content-center mt-4 m-auto ps-3" style="font-size: 12px;"
+              >By signing up, you agree to the Terms of Service
+              </small>
+          </div>
+        </form>
+      </section>
     </header>
     <!-- Bootstrap Links -->
     <script
