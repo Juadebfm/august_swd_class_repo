@@ -1,16 +1,8 @@
-.l_bg{
-    background-color: #2F1893;
+body {
+  font-family: "DM Sans", sans-serif;
 }
 
-.l_btn{
-    background-color: #482BE7;
-    color: #fff;
-    border: none;
-    border-radius: 100px;
-    padding: 5px 21px;
-    text-decoration: none;
 
-    @media (max-width:761px) {
-        width: 90px;
-    }
-}
+
+
+
