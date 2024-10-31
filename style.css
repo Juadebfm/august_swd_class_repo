@@ -5,3 +5,24 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+.navbar.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transition: background-color 0.3s ease;
+  z-index: 20;
+}
+
+.navbar.bg-transparent .nav-link {
+  color: white !important;
+}
+
+.navbar.bg-transparent .navbar-brand {
+  color: white !important;
+}
+
+@media (min-width: 992px) {
+  .navbar.bg-transparent .navbar-toggler {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
