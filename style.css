@@ -1,0 +1,11 @@
+.myH1 {
+    background-color: aqua;
+    color:black;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
