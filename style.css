@@ -8,6 +8,7 @@ body {
 
 .navbar.bg-transparent {
   background-color: rgba(0, 0, 0, 0.3) !important;
+<<<<<<< Updated upstream
   transition: background-color 0.3s ease;
   z-index: 20;
 }
@@ -26,3 +27,8 @@ body {
     border-color: rgba(255, 255, 255, 0.5);
   }
 }
+=======
+  transition: background-color;
+  z-index: 20;
+}
+>>>>>>> Stashed changes
