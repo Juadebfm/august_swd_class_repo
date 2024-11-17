@@ -13,11 +13,14 @@
   <body>
     <header
       class="vh-100"
-      style="background: url('./img/home.jpg') center/cover no-repeat"
+      style="
+        background: url('./img/home.jpg');
+        min-height: 100vh center/cover no-repeat;
+      "
     >
       <!-- Navbar -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50 py-4"
+        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50 py-4 top-0 start-0 w-100"
       >
         <div class="container py-3">
           <a class="navbar-brand fw-bold" href="#">PROPERTY</a>
@@ -36,7 +39,7 @@
             <div class="navbar-nav">
               <a class="nav-link active" href="#home">HOME</a>
               <a class="nav-link active" href="#about">ABOUT</a>
-              <a class="nav-link active" href="#product">FEATURE</a>
+              <a class="nav-link active" href="#Feature">FEATURE</a>
               <a class="nav-link active" href="#contact">CONTACT</a>
             </div>
           </div>
@@ -44,7 +47,7 @@
       </nav>
       <!-- Hero Section -->
 
-      <div class="h-75 d-flex align-items-center bg-dark bg-opacity-50">
+      <div class="h-100 d-flex align-items-center bg-dark bg-opacity-50">
         <div class="container text-white">
           <h1
             class="display-4"
@@ -62,6 +65,198 @@
           </p>
         </div>
       </div>
+      <!-- Hero -->
+      <!-- home -->
+      <section id="home" class="container mb-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="text-capitalize mb-4">
+              attractive home provider for vacation
+            </h2>
+            <p class="Lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium sed id quis quae fuga atque odio ad totam animi quo
+              quia, velit natus ea facere!
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./img/house.jpg"
+              alt="house"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- home -->
+      <section id="about">
+        <div class="container bg-light py-5 mb-5">
+          <div class="row justify-content-center text-center g-4">
+            <div class="col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <img
+                    src="./img/chat.png"
+                    alt="chat"
+                    class="mb-3"
+                    style="width: 64px"
+                  />
+                  <h4>Easy and Safe</h4>
+                  <p class="text-muted">Find your many real Property type</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <img
+                    src="./img/chat.png"
+                    alt="chat"
+                    class="mb-3"
+                    style="width: 64px"
+                  />
+                  <h4>Invested Property</h4>
+                  <p class="text-muted">on the resident platform</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <img
+                    src="./img/chat.png"
+                    alt="chat"
+                    class="mb-3"
+                    style="width: 64px"
+                  />
+                  <h4>Licences and Contract</h4>
+                  <p class="text-muted">Contrary to Popular</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end -->
+
+      <!-- feature -->
+      <section id="feature" class="container mb-5">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4"
+        >
+          <div class="px-4">
+            <h2 class="mb-0">Feature Property</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, maiores.
+            </p>
+          </div>
+          <div class="px-4">
+            <a href="#" class="btn btn-primary">View All</a>
+          </div>
+        </div>
+        <div class="row g-4 px-4">
+          <!-- 6 cards -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="./img/room1.jpg" alt="first aprt" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="card-title mb-0">Home</h5>
+                  <h5 class="card-title mb-0">$20,000</h5>
+                </div>
+                <p class="card-text text-muted">
+                  some quick example text to use on the card title and make up
+                  bulk of the cards content
+                </p>
+                <a href="#" class="btn btn-primary w-100">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="./img/room1.jpg" alt="first aprt" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="card-title mb-0">Home</h5>
+                  <h5 class="card-title mb-0">$20,000</h5>
+                </div>
+                <p class="card-text text-muted">
+                  some quick example text to use on the card title and make up
+                  bulk of the cards content
+                </p>
+                <a href="#" class="btn btn-primary w-100">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="./img/room1.jpg" alt="first aprt" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="card-title mb-0">Home</h5>
+                  <h5 class="card-title mb-0">$20,000</h5>
+                </div>
+                <p class="card-text text-muted">
+                  some quick example text to use on the card title and make up
+                  bulk of the cards content
+                </p>
+                <a href="#" class="btn btn-primary w-100">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="./img/room1.jpg" alt="first aprt" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="card-title mb-0">Home</h5>
+                  <h5 class="card-title mb-0">$20,000</h5>
+                </div>
+                <p class="card-text text-muted">
+                  some quick example text to use on the card title and make up
+                  bulk of the cards content
+                </p>
+                <a href="#" class="btn btn-primary w-100">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="./img/room1.jpg" alt="first aprt" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="card-title mb-0">Home</h5>
+                  <h5 class="card-title mb-0">$20,000</h5>
+                </div>
+                <p class="card-text text-muted">
+                  some quick example text to use on the card title and make up
+                  bulk of the cards content
+                </p>
+                <a href="#" class="btn btn-primary w-100">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="./img/room1.jpg" alt="first aprt" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="card-title mb-0">Home</h5>
+                  <h5 class="card-title mb-0">$20,000</h5>
+                </div>
+                <p class="card-text text-muted">
+                  some quick example text to use on the card title and make up
+                  bulk of the cards content
+                </p>
+                <a href="#" class="btn btn-primary w-100">Explore More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
