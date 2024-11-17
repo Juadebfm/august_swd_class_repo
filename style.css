@@ -9,3 +9,38 @@
     transition: background-color 0.5s, color 0.5s;
     cursor: pointer;
 }
+
+.myH1:hover {
+    background-color: lightblue;
+    color: white;
+    box-shadow: 4px 4px 10px grey;
+    transform: scale(1.05);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.myDiv {
+    width: 50%;
+    margin: 0 auto;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    transition: background-color 0.5s;
+    height: 600px;
+}
+
+.myImg {
+    width: 50%;
+    height: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border: 1.5px solid #f0f;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+        box-shadow: 4px 4px 10px grey;
+        cursor: pointer;
+    }
+}
