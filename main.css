@@ -1,0 +1,30 @@
+.myClass {
+  background-color: brown;
+  color: white;
+}
+
+.myBody {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.myImg {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 5px solid white;
+}
+
+.blue_bg {
+  background-color: #0000ff;
+  color: #f5f5f5;
+}
+
+.imgStyle {
+  width: 100vh;
+  height: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 5px solid white;
+}

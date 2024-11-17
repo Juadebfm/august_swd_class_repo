@@ -21,3 +21,5 @@
 3. Staging area
 4. origin
 5. branches
+
+https://images.pexels.com/photos/27054224/pexels-photo-27054224/free-photo-of-motorbike-parked-on-hill-on-sea-coast.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
