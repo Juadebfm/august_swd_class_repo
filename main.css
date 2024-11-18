@@ -1,0 +1,17 @@
+.myBody { background-color: #0000ffef;
+}
+
+.myWorld { background-color: #ab2626;
+color: #fff;
+text-align: center;}
+
+.newImg { width: 50%;
+height: 50vh;
+border-radius: 16px;
+border: 4px solid #fff;
+padding: 12px;}
+
+/* .newDiv {background-color: blue;
+    height: 400px;
+    width: 400px;
+} */
