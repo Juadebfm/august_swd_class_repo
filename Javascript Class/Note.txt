@@ -1,0 +1,66 @@
+// function myFunc(num1, num2) {
+//   return (result = num1 + num2);
+// }
+
+// function myAdd() {
+//   const result = 100 + 300;
+//   return result;
+// }
+
+// const myNum1 = 100;
+// const myNum2 = 100;
+
+// console.log(myFunc(myNum1, myNum2));
+
+function checkNumberStatus(num) {
+  const logic = num % 2 === 0;
+  if (logic) {
+    console.log(`${num} is even`);
+  } else {
+    console.log(`${num} is odd`);
+  }
+
+  return logic;
+}
+
+const checkNumberStatus2 = (num) =>
+  num % 2 === 0 ? `${num} is even` : `${num} is odd`;
+
+console.log(checkNumberStatus(109));
+
+
+function checkDayStatus(day) {
+  if (day.toLowerCase() === "monday") {
+    console.log("Mon Week Day");
+  } else if (day.toLowerCase() === "tuesday") {
+    console.log("Tue Week Day");
+  } else if (day.toLowerCase() === "wednesday") {
+    console.log("Wed Week Day");
+  } else if (day.toLowerCase() === "thursday") {
+    console.log("Thur Week Day");
+  } else if (day.toLowerCase() === "friday") {
+    console.log("TGIF");
+  } else if (day.toLowerCase() === "saturday") {
+    console.log("Sat Weekend");
+  } else if (day.toLowerCase() === "sunday") {
+    console.log("Sun Weekend");
+  } else {
+    console.log("No such day in the week");
+  }
+
+  return day;
+}
+
+console.log(checkDayStatus("monDAY"));
+
+const myValue = Math.PI;
+console.log(myValue);
+
+const roundedValue = Math.round(4.7);
+const flooredValue = Math.floor(4.7);
+const ceiledValue = Math.ceil(4.7);
+
+const randomNumbers = Math.ceil(Math.random() * 1000);
+
+console.log(randomNumbers);
+
