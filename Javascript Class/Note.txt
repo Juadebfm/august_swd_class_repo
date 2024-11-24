@@ -97,4 +97,23 @@ myBtn.onclick = function () {
   </body>
 </html>
 
+// Event listener - 24/11/2024 
+function myClickObserver(e) {
+  if (e) {
+    e.preventDefault();
+  }
+  console.log("clicked");
+}
+// With toggle func
+const btn = document.getElementById("btn");
+const myH1 = document.getElementById("myH1");
 
+btn.addEventListener("click", () => {
+  const myColorArr = ["red", "blue", "green", "black", "gold", "purple"];
+  const randomColor = myColorArr[Math.floor(Math.random() * myColorArr.length)];
+  document.body.style.backgroundColor = randomColor;
+
+  myH1.classList.toggle("hideHeading");
+
+  return myColorArr;
+});

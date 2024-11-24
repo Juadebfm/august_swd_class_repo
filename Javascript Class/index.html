@@ -5,18 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./class.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <body class="text-white h-screen flex items-center justify-center flex-col">
-      <h1 class="text-black text-5xl text-center mt-14 font-bold uppercase">
-        Change Background Color
-      </h1>
-      <button
-        id="btn"
-        class="bg-gray-800 text-gray-50 px-8 py-3 text-xl mt-14 rounded-md"
-      >
-        Change Color
-      </button>
+    <body class="h-screen px-28 py-14">
+      <header>
+        <nav
+          class="flex items-center justify-between border-b-2 border-slate-900 pb-6"
+        >
+          <span class="text-3xl font-bold w-[20%]">Logo</span>
+          <div
+            class="hidden lg:flex items-center justify-between gap-4 w-[80%]"
+            id="sidebar"
+          >
+            <ul
+              class="flex flex-col lg:flex-row space-x-0 lg:space-x-4 pl-0 lg:pl-28"
+            >
+              <li><a href="#">navitem</a></li>
+              <li><a href="#">navitem</a></li>
+              <li><a href="#">navitem</a></li>
+              <li><a href="#">navitem</a></li>
+            </ul>
+            <div class="flex flex-col lg:flex-row mt-10 lg:mt-0">
+              <button
+                class="bg-gray-400 text-gray-900 font-bold rounded px-4 py-2"
+              >
+                SignIn
+              </button>
+              <button
+                class="mt-5 lg:mt-0 bg-gray-400 text-gray-900 font-bold rounded px-4 py-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+          <div class="block lg:hidden text-3xl cursor-pointer" id="toggleMenu">
+            <i class="bx bx-menu"></i>
+          </div>
+
+          <div class="hidden text-3xl cursor-pointer" id="closeMenu">
+            <i class="bx bx-x"></i>
+          </div>
+        </nav>
+      </header>
     </body>
     <script src="./app.js"></script>
   </body>
