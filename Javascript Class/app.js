@@ -1,33 +1,26 @@
-const fruits = [
-  "Mango",
-  "Banana",
-  "Guava",
-  "Orange",
-  "Pineapple",
-  "Apple",
-  "Grapes",
-  "Strawberry",
-  "Watermelon",
-  "Peach",
-];
+// Get the elements
+const input = document.getElementById("inputNumber");
+const validateText = document.getElementById("validationText");
+const button = document.getElementById("submitButton");
+const numbersContainer = document.getElementById("numbersContainer");
 
-// Traditional for loop
-// for (let i = 0; i < fruits.length; i++) {
-//   console.log(`Fruit Number ${i + 1} : ${fruits[i]}`);
-// }
+//Validate the user's input on button click
+button.addEventListener("click", (event) => {
+  //stop the page from refreshing
+  event.preventDefault();
 
-// For Of
-// for (const fruit of fruits) {
-//   console.log(fruit);
-// }
+  //Take user input and change it to a number
+  const inputValue = parseInt(input.value);
 
-// New loop methods
-// fruits.forEach((fruit, index) => {
-//   console.log(`${index}: ${fruit}`);
-// });
-
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-nums.forEach((num) => {
-  console.log(num * num);
+  //Validation for our input
+  if (input.value === "") {
+    validateText.textContent = "Please enter a value";
+    validateText.className = "text-red-500 text-center mb-3 font-bold";
+  } else if (isNaN(inputValue)) {
+    validateText.textContent =
+      "Please enter a valid number, not a string or symbol";
+    validateText.className = "text-red-500 text-center mb-3 font-bold";
+  } else {
+    validateText.textContent = "";
+  }
 });

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto px-4 py-10">
+      <h1 class="text-5xl font-bold uppercase text-center mb-5">
+        Number Generator
+      </h1>
+      <h2 class="capitalize text-xl font-mono font-medium text-center mb-5">
+        For DOM Manipulation And Event Listener Class
+      </h2>
+      <!-- // Form Container -->
+      <div class="max-w-md mx-auto mb-6">
+        <p id="validationText" class="text-red-500 text-center mb-3"></p>
+
+        <form class="flex">
+          <input
+            type="text"
+            id="inputNumber"
+            placeholder="Please enter a valid number"
+            class="flex-grow p-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            id="submitButton"
+            class="cursor-pointer bg-blue-500 text-white px-4 py-5 rounded-r-md hover:bg-blue-600 transition-all duration-300 ease-linear"
+          >
+            Generate Numbers
+          </button>
+        </form>
+      </div>
+
+      <div id="numbersContainer" class="grid grid-cols-10 justify-center"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -135,3 +135,87 @@ closeMenu.addEventListener("click", () => {
   closeMenu.classList.remove("showClose");
   toggleMenu.classList.remove("hideMenu");
 });
+
+// loops for loop, for of and forEach - 30th/nov/2024
+const fruits = [
+  "Mango",
+  "Banana",
+  "Guava",
+  "Orange",
+  "Pineapple",
+  "Apple",
+  "Grapes",
+  "Strawberry",
+  "Watermelon",
+  "Peach",
+];
+
+// Traditional for loop
+for (let i = 0; i < fruits.length; i++) {
+  console.log(`Fruit Number ${i + 1} : ${fruits[i]}`);
+}
+
+// For Of
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
+// New loop methods
+fruits.forEach((fruit, index) => {
+  console.log(`${index}: ${fruit}`);
+});
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+nums.forEach((num) => {
+  console.log(num * num);
+});
+
+// local storage - 30/11/2024
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Creator</title>
+  </head>
+  <body>
+    <button id="addBtn">Add My Name To Local Storage</button>
+    <button id="removeBtn">Remove My Name From Local Storage</button>
+    <button id="clearBtn">Clear Everything in Local Storage</button>
+    <button id="getBtn">Get My Name from Local Storage</button>
+    <p id="info"></p>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+// JS
+const addBtn = document.getElementById("addBtn");
+const removeBtn = document.getElementById("removeBtn");
+const clearBtn = document.getElementById("clearBtn");
+const getBtn = document.getElementById("getBtn");
+const info = document.getElementById("info");
+
+const myname = "Julius A Adebowale";
+const myAge = 35;
+
+addBtn.addEventListener("click", () => {
+  localStorage.setItem("MyName", myname);
+  localStorage.setItem("MyAge", myAge);
+});
+
+removeBtn.addEventListener("click", () => {
+  localStorage.removeItem("MyName");
+});
+
+clearBtn.addEventListener("click", () => {
+  localStorage.clear();
+});
+
+getBtn.addEventListener("click", () => {
+  const myname = localStorage.getItem("MyName");
+  info.innerText = myname;
+  info.style.backgroundColor = "blue";
+  info.style.color = "white";
+  info.style.padding = "20px";
+});
