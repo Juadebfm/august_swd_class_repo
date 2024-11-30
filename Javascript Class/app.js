@@ -1,16 +1,33 @@
-const toggleMenu = document.getElementById("toggleMenu");
-const closeMenu = document.getElementById("closeMenu");
-const sidebar = document.getElementById("sidebar");
+const fruits = [
+  "Mango",
+  "Banana",
+  "Guava",
+  "Orange",
+  "Pineapple",
+  "Apple",
+  "Grapes",
+  "Strawberry",
+  "Watermelon",
+  "Peach",
+];
 
-toggleMenu.addEventListener("click", () => {
-  //   console.log("clicked");
-  sidebar.classList.add("show");
-  closeMenu.classList.add("showClose");
-  toggleMenu.classList.add("hideMenu");
-});
-closeMenu.addEventListener("click", () => {
-  //   console.log("Double clicked");
-  sidebar.classList.remove("show");
-  closeMenu.classList.remove("showClose");
-  toggleMenu.classList.remove("hideMenu");
+// Traditional for loop
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(`Fruit Number ${i + 1} : ${fruits[i]}`);
+// }
+
+// For Of
+// for (const fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// New loop methods
+// fruits.forEach((fruit, index) => {
+//   console.log(`${index}: ${fruit}`);
+// });
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+nums.forEach((num) => {
+  console.log(num * num);
 });
