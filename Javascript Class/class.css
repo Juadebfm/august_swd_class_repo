@@ -18,3 +18,8 @@
 .hideMenu {
   display: none !important;
 }
+
+.myWidth {
+  width: 100px;
+  display: flex;
+}

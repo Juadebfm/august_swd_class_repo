@@ -18,12 +18,12 @@
       <div class="max-w-md mx-auto mb-6">
         <p id="validationText" class="text-red-500 text-center mb-3"></p>
 
-        <form class="flex">
+        <form class="flex flex-col lg:flex-row">
           <input
             type="text"
             id="inputNumber"
             placeholder="Please enter a valid number"
-            class="flex-grow p-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
             id="submitButton"
@@ -34,7 +34,10 @@
         </form>
       </div>
 
-      <div id="numbersContainer" class="grid grid-cols-10 justify-center"></div>
+      <div
+        id="numbersContainer"
+        class="grid grid-cols-10 place-items-center place-content-center gap-10"
+      ></div>
     </div>
 
     <script src="./app.js"></script>
