@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="p-5">
+    <h1 class="text-4xl font-bold capitalize text-center mb-5 text-green-600">
+      Calculator Application
+    </h1>
+
+    <div class="flex">
+      <!-- Addition container -->
+      <div class="container mx-auto px-4 py-10">
+        <p class="text-2xl uppercase text-center mb-3 text-green-600">A</p>
+
+        <div>
+          <p id="validationText" class="text-red-500 text-center mb-3"></p>
+
+          <form class="flex flex-col">
+            <input
+              type="text"
+              id="inputNumber"
+              placeholder="Enter a valid number"
+              class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 mb-6 text-center"
+            />
+            <button
+              id="submitButton"
+              class="cursor-pointer bg-green-500 text-white px-4 py-5 rounded-r-md hover:bg-green-600 transition-all duration-300 ease-linear"
+            >
+              Addition Button
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Subtraction container  -->
+      <div class="container mx-auto px-4 py-10">
+        <p class="text-2xl text-center mb-3 text-green-600 uppercase">B</p>
+
+        <div>
+          <p id="validationText" class="text-red-500 text-center mb-3"></p>
+
+          <form class="flex flex-col">
+            <input
+              type="text"
+              id="inputNumber"
+              placeholder="Enter a valid number"
+              class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 mb-6 text-center"
+            />
+            <button
+              id="submitButton"
+              class="cursor-pointer bg-green-500 text-white px-4 py-5 rounded-r-md hover:bg-green-600 transition-all duration-300 ease-linear"
+            >
+              Subtraction Button
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-center justify-center flex m-auto" id="resultSection">
+      <p> </p>
+    </div>
+  </body>
+</html>
