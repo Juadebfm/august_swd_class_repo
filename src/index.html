@@ -6,30 +6,32 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="p-5">
-    <h1 class="text-4xl font-bold capitalize text-center mb-5 text-green-600">
+    <h1
+      class="text-5xl font-semibold capitalize text-center mb-5 text-green-600"
+    >
       Calculator Application
     </h1>
 
     <div class="flex">
       <!-- Addition container -->
       <div class="container mx-auto px-4 py-10">
-        <p class="text-2xl uppercase text-center mb-3 text-green-600">A</p>
+        <p class="text-4xl uppercase text-center mb-3 text-green-600">A</p>
 
         <div>
-          <p id="validationText" class="text-red-500 text-center mb-3"></p>
+          <p id="validationTextA" class="text-red-500 text-center mb-3"></p>
 
           <form class="flex flex-col">
             <input
               type="text"
-              id="inputNumber"
+              id="inputNumberA"
               placeholder="Enter a valid number"
-              class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 mb-6 text-center"
+              class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 mb-6 text-center text-2xl"
             />
             <button
-              id="submitButton"
-              class="cursor-pointer bg-green-500 text-white px-4 py-5 rounded-r-md hover:bg-green-600 transition-all duration-300 ease-linear"
+              id="submitButtonA"
+              class="cursor-pointer bg-green-500 text-white  px-4 py-5 text-2xl rounded-r-md hover:bg-green-600 transition-all duration-300 ease-linear"
             >
-              Addition Button
+              Addition 
             </button>
           </form>
         </div>
@@ -37,31 +39,33 @@
 
       <!-- Subtraction container  -->
       <div class="container mx-auto px-4 py-10">
-        <p class="text-2xl text-center mb-3 text-green-600 uppercase">B</p>
+        <p class="text-4xl uppercase text-center mb-3 text-green-600">B</p>
 
         <div>
-          <p id="validationText" class="text-red-500 text-center mb-3"></p>
+          <p id="validationTextB" class="text-red-500 text-center mb-3"></p>
 
           <form class="flex flex-col">
             <input
               type="text"
-              id="inputNumber"
+              id="inputNumberB"
               placeholder="Enter a valid number"
-              class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 mb-6 text-center"
+              class="flex-grow px-4 py-5 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 mb-6 text-center text-2xl"
             />
             <button
-              id="submitButton"
-              class="cursor-pointer bg-green-500 text-white px-4 py-5 rounded-r-md hover:bg-green-600 transition-all duration-300 ease-linear"
+              id="submitButtonB"
+              class="cursor-pointer bg-green-500 text-white  px-4 py-5 text-2xl rounded-r-md hover:bg-green-600 transition-all duration-300 ease-linear"
             >
-              Subtraction Button
+              Subtraction 
             </button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="items-center justify-center flex m-auto" id="resultSection">
-      <p> </p>
-    </div>
+    
+      <p class="items-center justify-center  flex m-auto mt-10 text-4xl text-green-600 p-9 w-3/12"
+      id="resultSection"></p>
+
+      <script src="./app.js"></script>
   </body>
 </html>
