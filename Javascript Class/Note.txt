@@ -219,3 +219,21 @@ getBtn.addEventListener("click", () => {
   info.style.color = "white";
   info.style.padding = "20px";
 });
+
+
+dec 7th try catch finally block_
+const lastName = "Julius";
+const nickName = "ignore";
+
+try {
+  let fullName = nickName + " " + lastName;
+
+  if (nickName === "") {
+    throw new Error("Please add a value");
+  }
+  console.log(fullName);
+} catch (err) {
+  console.log(err);
+} finally {
+  console.log("In any case I will be executed");
+}

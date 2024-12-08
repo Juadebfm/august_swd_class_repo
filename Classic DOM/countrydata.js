@@ -4,7 +4,7 @@ const countries_data = [
     capital: "Kabul",
     languages: ["Pashto", "Uzbek", "Turkmen"],
     population: 40218234,
-    flag: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+    // flag: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
     region: "Asia",
     area: 652230,
   },
@@ -2256,3 +2256,5 @@ const countries_data = [
     area: 390757,
   },
 ];
+
+
