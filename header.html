@@ -24,36 +24,63 @@
         font-weight: 600;
       }
       .navbar-brand {
-        color: #1E0E62;
+        color: #fff;
         font-size: 25px;
         font-weight: 500;
       }
       .hero_section {
-        color: #1E0E62;
+        color: #fff;
         font-size: 60px;
         font-weight: 600;
         line-height: 1.2;
         margin-bottom: 2rem;
       }
       .hero_talk {
-        color: #1e0e6266;
+        color: #ffffff;
         font-size: 18px;
         line-height: 1.5;
         width: 80%;
         margin: auto;
       }
-      @media screen and (max-width: 700px) {
-        .d-flex {
-          flex-direction: column;
-          gap: 1rem;
+      input {
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1.5px solid #ededed66;
+        width: 250px;
+      }
+      body {
+        background-color: #2F1893;
+        color: #fff;
+      }
+      a {
+        color: #ffffff !important;
+        
+      }
+      @media (max-width: 700px) {
+        .navbar-toggler{
+            background-color: #25DAC5 !important;
         }
-
         .w-50 {
-          width: 100% !important;
+            width: 100%!important;
         }
 
-        .w-25 {
-          width: 100%!important;
+        .hero_section {
+            font-size: 40px;
+        }
+
+        .hero_talk {
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input {
+            width: 100%;
         }
       }
     </style>
@@ -137,46 +164,38 @@
       <section></section>
     </main> -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container p-3">
           <a class="navbar-brand" href="#">Startup 3</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Subscribe</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-2 fs-4"><i class='bx bx-search-alt-2' ></i></a>
-              </li>
             </ul>
             <div class="d-flex">
-              <button class="normal_btn">sign in</button>
-              <button class="btn btn-outline-success green_btn" type="button">Sign in</button>
+              <button class="btn btn-outline-success green_btn" style="background-color: #482BE7 !important;" type="button">Sign in</button>
             </div>
           </div>
         </div>
       </nav>
       <section class="container text-center">
         <div class="w-50 m-auto mb-5 mt-5">
-          <h1 class="hero_section">Startup Framework</h1>
-          <p class="hero_talk">We made it so beutiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection! </p>
+          <h1 class="hero_section">Let’s make design
+            fast and easy</h1>
+          <p class="hero_talk"> The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit. </p>
         </div>
-        <div class="d-flex flex-column w-25 m-auto">
-          <button class="green_btn">Purchase Now for $248</button>
-          <button class="normal_btn mt-3" style="color: #25DAC5;">Learn More</button>
-        </div>
+        <form class="w-50 m-auto">
+          <input class="sec_input" type="email" name="email" placeholder="your email">
+          <button class="green_btn mt-3">Send</button>
+          <small class="mt-3  d-block" style="color: #ededed66;">We will never share your email address</small>
+        </form>
       </section>
     </header>
     <!-- Boostrap JS  -->
