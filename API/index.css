@@ -1,0 +1,46 @@
+.text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #ddd;
+    font-family: sans-serif;
+}
+
+.text div {
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 30px 0px;
+    border: 1.5px solid #000;
+    
+    &:hover {
+        transition: background-color 0.5s;
+        box-shadow: 0px 0px 20px #000;
+    }
+}
+
+.text img {
+    width: 100%;
+    height: 70%; 
+}
+
+.text p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.text span {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
