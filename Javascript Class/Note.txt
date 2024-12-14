@@ -237,3 +237,50 @@ try {
 } finally {
   console.log("In any case I will be executed");
 }
+
+
+14/12/2024 - fetch api
+const body = document.body;
+
+body.classList.add("test");
+
+const fetchData = () => {
+  const url = "https://jsonplaceholder.typicode.com/posts";
+  fetch(url)
+    .then((response) => response.json())
+    .then((datas) => {
+      console.log(datas);
+      datas.forEach((data) => {
+        // Store values in singular data inside a variable
+        const titleValue = data.title;
+        const para = data.body;
+
+        // create elements
+        const div = document.createElement("div");
+        const title = document.createElement("h1");
+        const paragraph = document.createElement("p");
+
+        // Style elements
+        div.style.backgroundColor = "#eeeeee";
+        div.style.padding = "20px";
+        div.style.borderRadius = "10px";
+        div.style.color = "#10101a";
+        div.style.minHeight = "300px";
+
+        title.style.textTransform = "uppercase";
+
+        // use the values in the data as the text content
+        title.textContent = titleValue;
+        paragraph.textContent = para;
+
+        // append new element to the div
+        div.appendChild(title);
+        div.appendChild(paragraph);
+
+        body.appendChild(div);
+      });
+    })
+    .catch((error) => console.log(error));
+};
+
+document.addEventListener("DOMContentLoaded", fetchData);
