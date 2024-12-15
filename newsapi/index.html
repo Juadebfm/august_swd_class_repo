@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Aggregator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold text-center mb-6">News Aggregator</h1>
+
+      <!-- Search bar -->
+      <div class="max-w-xl mx-auto mb-8 relative">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search news by keyword"
+          class="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <i
+          class="bx bx-search h-6 w-6 absolute left-3 top-3.5 text-gray-400"
+        ></i>
+
+        <button
+          id="clearSearch"
+          class="absolute right-3 top-6 text-gray-400 hover:text-gray-600 duration-300 transition-all hidden"
+        >
+          X
+        </button>
+      </div>
+
+      <!-- News Container  -->
+      <div
+        id="newsContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></div>
+
+      <!-- News Details -->
+      <div id="newsDetail" class="hidden">
+        <button
+          id="backButton"
+          class="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+        >
+          &larr; Back
+        </button>
+        <div
+          class="bg-white w-[50%] mx-auto rounded-lg shadow-lg overflow-hidden"
+        >
+          <img
+            src=""
+            alt="News Image"
+            class="w-full h-64 object-cover"
+            id="detailImage"
+          />
+          <div class="p-5">
+            <h2 id="detailTitle" class="font-bold text-2xl mb-2"></h2>
+            <p id="detailAuthor" class="text-gray-600 text-sm mb-4"></p>
+            <p id="detailDescription" class="text-gray-500 text-base"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

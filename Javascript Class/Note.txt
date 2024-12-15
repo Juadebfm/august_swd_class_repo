@@ -284,3 +284,5 @@ const fetchData = () => {
 };
 
 document.addEventListener("DOMContentLoaded", fetchData);
+
+
