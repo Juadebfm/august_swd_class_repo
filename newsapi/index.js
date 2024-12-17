@@ -59,6 +59,7 @@ function renderNews(articles) {
       "bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer";
 
     card.innerHTML = `
+card.innerHTML = `
 <img src="${article.urlToImage || "./star.jpg"}" alt="${
       article.title || "Alt Text"
     }" class="w-full h-48 object-cover"/>
@@ -68,6 +69,11 @@ function renderNews(articles) {
     <a href="${article.url}" class="text-blue-500 hover:text-blue-700">
     Read More
     </a>
+`;
+
+console.log('Rendering article:', article.title);
+console.log('Article URL:', article.url);
+console.log('Article Image URL:', article.urlToImage);
 
 `;
 
