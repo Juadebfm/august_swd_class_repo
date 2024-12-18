@@ -1,0 +1,7 @@
+.carl {
+  color: red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center center;
+  justify-content: center center;
+}
